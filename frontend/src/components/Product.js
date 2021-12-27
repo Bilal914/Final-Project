@@ -20,4 +20,3 @@ export default function product(props) {
 
     )
 }
-export default Rating;

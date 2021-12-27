@@ -14,4 +14,3 @@ export default function Rating(props) {
         </div>
     )
 }
-export default Rating;
