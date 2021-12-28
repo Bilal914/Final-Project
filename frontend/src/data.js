@@ -72,6 +72,18 @@ const data = {
         numReviews: 15,
         description: 'high quality product',
       },
+      {
+        _id: '7',
+        name: 'Gucci',
+        category: 'Pants',
+        image: '/images/picture6.jpg',
+        price: 139,
+        countInStock: 12,
+        brand: 'Adidas',
+        rating: 4.5,
+        numReviews: 15,
+        description: 'high quality product',
+      },
     ],
   };
   export default data;
