@@ -6,7 +6,7 @@ export default function HomeScreen() {//fetcing data using backend to frontend
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const fetchdata = async () => {
-      const { data } = await axios.get('api/products');
+      const { data } = await axios.get('/api/products');
       setProducts(data);
     };
     fetchdata();
