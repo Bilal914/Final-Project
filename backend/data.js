@@ -1,8 +1,9 @@
+
 const data = {
     products: [
       {
         _id: '1',
-        name: 'Nike Slim Shirt',
+        name: 'Suit Blue',
         category: 'Shirts',
         image: '/images/picture1.jpg',
         price: 120,
@@ -14,7 +15,7 @@ const data = {
       },
       {
         _id: '2',
-        name: 'Adidas Fit Shirt',
+        name: 'Suit Grey',
         category: 'Shirts',
         image: '/images/picture2.jpg',
         price: 100,
@@ -26,7 +27,7 @@ const data = {
       },
       {
         _id: '3',
-        name: 'Lacoste Free Shirt',
+        name: 'Suit Maroon',
         category: 'Shirts',
         image: '/images/picture3.jpg',
         price: 220,
@@ -52,7 +53,7 @@ const data = {
         _id: '5',
         name: 'Puma Slim Pant',
         category: 'Pants',
-        image: '/images/picture6.jpg',
+        image: '/images/picture10.jpg',
         price: 65,
         countInStock: 5,
         brand: 'Puma',
@@ -64,7 +65,7 @@ const data = {
         _id: '6',
         name: 'Adidas Fit Pant',
         category: 'Pants',
-        image: '/images/picture6.jpg',
+        image: '/images/picture10.jpg',
         price: 139,
         countInStock: 12,
         brand: 'Adidas',
@@ -76,7 +77,19 @@ const data = {
         _id: '7',
         name: 'Gucci',
         category: 'Pants',
-        image: '/images/picture6.jpg',
+        image: '/images/picture10.jpg',
+        price: 139,
+        countInStock: 12,
+        brand: 'Adidas',
+        rating: 4.5,
+        numReviews: 15,
+        description: 'high quality product',
+      },
+      {
+        _id: '8',
+        name: 'Gucci',
+        category: 'Pants',
+        image: '/images/picture10.jpg',
         price: 139,
         countInStock: 12,
         brand: 'Adidas',

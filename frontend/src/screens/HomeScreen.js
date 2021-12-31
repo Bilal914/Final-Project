@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, } from 'react';
 
 import Product from '../components/Product';
-import axios from 'axios'//for requesting data from backend to frontend
+//for requesting data from backend to frontend
+import { useDispatch, useSelector } from 'react-redux';
+import { listProducts } from '../actions/productActions';
 export default function HomeScreen() {//fetcing data using backend to frontend
-  const [products, setProducts] = useState([]);
+  const dispatch= useDispatch();
+  const productList= useSelector((state) => state.productList);
+  const {loading,error,products}=productList;
   useEffect(() => {
-    const fetchdata = async () => {
-      const { data } = await axios.get('/api/products');
-      setProducts(data);
-    };
-    fetchdata();
-
-  }, [])
+    dispatch(listProducts());
+  }, [dispatch])
   return (
     <div>
+      
+      
       <div className="row center">
         {
-          products.map((product) => (
+         products && products.map((product) => (
             <Product key={product._id} product={product}></Product>//extracting component from product
           ))}
 
